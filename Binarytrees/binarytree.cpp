@@ -42,13 +42,37 @@ class node{
     cout<<root->data;
 
  }
+// height of tree4
+int height(node*root){
+    if(root==NULL) return 0;
+    int leftht=height(root->left);
+    int rightht=height(root->right);
+    return max(leftht,rightht)+1;
+}
+//count nodes
+int count(node*root){
+    if(root==NULL) return 0;
+    int leftcount=count(root->left);
+    int rightcount=count(root->right);
+    return leftcount+rightcount+1;
+}
+//sum of nodes
+int sum(node*root){
+    if(root==NULL) return 0;
+    int rightsum=sum(root->right);
+    int leftsum=sum(root->left);
+    return rightsum+leftsum+root->data;
+}
 
 int main(){
     vector<int>preorder={1,2,-1,-1,3,4,-1,-1,5,-1,-1};
       node*root=buildtree(preorder);
     //   Preorder(root);
     //   inorder(root);
-      postorder(root);
+    //   postorder(root);
+    // cout<<"height="<<height(root);
+    // cout<<"count="<<count(root);
+    cout<<"sum of nodes="<<sum(root);
 
 
     
