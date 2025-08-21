@@ -31,8 +31,8 @@ class node{
     cout<<root->data<< " ";
     return;
   }
-  kthLevelorder(root->left,k--);
-  kthLevelorder(root->right, k--);
+  kthLevelorder(root->left,k-1);
+  kthLevelorder(root->right, k-1);
     }
 
 
