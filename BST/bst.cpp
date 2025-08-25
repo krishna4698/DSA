@@ -16,7 +16,7 @@ class node{
 };
 
 node*insert(node*root,int val){
-if(root==NULL) {
+if(root==NULL) { 
     return new node(val);
 }
 if(val< root->data){
@@ -43,9 +43,24 @@ void inorder(node*root){
 
 }
 
+// Search in Tree
+
+bool search(node*root,int key){
+    if(root==NULL) return false;
+    if(root->data==key) return true;
+        if(root->data>key){ 
+         return  search(root->left,key);
+        }
+        else{
+            return  search(root->right,key);
+        }
+}
+
 int main(){
 vector<int>arr={ 3,2,1,5,6,4};
 node*root=Buildbst(arr);
-inorder(root);
-cout<<endl;
+// inorder(root);
+// cout<<endl;
+cout<<search(root,33);
+
 }
