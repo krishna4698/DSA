@@ -70,9 +70,9 @@ int main(){
     //   Preorder(root);
     //   inorder(root);
     //   postorder(root);
-    // cout<<"height="<<height(root);
+    cout<<"height="<<height(root);
     // cout<<"count="<<count(root);
-    cout<<"sum of nodes="<<sum(root);
+    // cout<<"sum of nodes="<<sum(root);
 
 
     

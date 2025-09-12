@@ -44,7 +44,7 @@ class node{
     3, 6, -1, -1, 7, -1, -1
 };
         node*root=buildtree(preorder);
-        kthLevelorder(root,3);
+        kthLevelorder(root,4);
  
     
     }
