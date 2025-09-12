@@ -1,5 +1,6 @@
 #include<iostream>
 #include<list>
+#include<queue>
 using namespace std;
 
 class Graph{
@@ -25,6 +26,25 @@ for(int i=0; i<V; i++){
 cout <<endl;
 }
     }
+
+    void bfs(){
+        queue<int>q;
+        vector<bool>visted(V,false);
+        q.push(0);
+        visted[0]=true;
+        while(q.size()>0){
+            int u=q.front();
+            q.pop();
+            cout<<u<<" ";
+            for(int v: l[u]){
+                if(!visted[v]){
+                    visted[v]=true;
+                    q.push(v);
+                }
+            }
+        }
+    }
+    
    
 };
 
@@ -36,7 +56,7 @@ int main(){
     g.addedge(1,3);
     g.addedge(2,3);
     g.addedge(2,4);
-    
-    g.print();
+    g.bfs();
+    // g.print();
 
 }
