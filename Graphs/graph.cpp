@@ -44,6 +44,30 @@ cout <<endl;
             }
         }
     }
+    //DFS Traversal
+
+    void dfshelper(int u,vector<bool>& vis){
+        cout<< u<<" ";
+        vis[u]=true;
+          for(int v:l[u]){
+            if(!vis[v]){
+                dfshelper(v,vis);
+            }
+          }
+    }
+    void dfs(){
+        int src=0;
+        vector<bool>vis(V,false);
+        // dfshelper(src,vis);
+
+        // if there is multiple graphs or we can say that disconnrected graphs
+        for(int i=0; i<V; i++){
+            if(!vis[i]){
+                dfshelper(src,vis);
+            }
+        }
+        /////
+    }
     
    
 };
@@ -54,9 +78,10 @@ int main(){
     g.addedge(0,1);
     g.addedge(1,2);
     g.addedge(1,3);
-    g.addedge(2,3);
+    // g.addedge(2,3);
     g.addedge(2,4);
-    g.bfs();
+    // g.bfs();
+    g.dfs();
     // g.print();
 
 }
