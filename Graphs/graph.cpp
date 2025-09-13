@@ -68,6 +68,35 @@ cout <<endl;
         }
         /////
     }
+
+    //iscylce using dfs
+    bool iscycledfs(int src, int par, vector<bool>&vis){
+      vis[src]=true;
+      list<int>neigh=l[src];
+        for(int v:neigh){
+            if(!vis[v]){
+              if(iscycledfs(v,src,vis)){
+                return true;
+              }
+            }
+            else  if(v!=par){
+                return true;
+            }
+        }
+        return false;
+    }
+    bool iscycle(){
+        vector<bool>vis(V,false);
+        for(int i=0; i<V; i++){
+            if(!vis[i]){
+                if(iscycledfs(i,-1,vis)){
+                    return true;
+                }
+            }
+        }
+        return false;
+        
+    }
     
    
 };
@@ -80,8 +109,10 @@ int main(){
     g.addedge(1,3);
     // g.addedge(2,3);
     g.addedge(2,4);
+    g.addedge(4,3);
     // g.bfs();
-    g.dfs();
+    // g.dfs();
+    cout<< g.iscycle();
     // g.print();
 
 }
