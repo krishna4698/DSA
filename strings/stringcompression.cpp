@@ -5,6 +5,8 @@ using namespace std;
 
 int main(){
   vector<char>chars = {'a', 'a', 'b', 'b', 'c', 'c', 'c'};
+ 
+  cout<<m;
     int idx=0; int n=chars.size();
     for(int i=0; i<n; i++){
         int count=0; char ch=chars[i];
