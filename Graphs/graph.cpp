@@ -112,7 +112,7 @@ int main(){
     g.addedge(4,3);
     // g.bfs();
     // g.dfs();
-    cout<< g.iscycle();
-    // g.print();
+    // cout<< g.iscycle();
+    g.print();
 
 }
