@@ -1,0 +1,30 @@
+[33m67968f6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: commit: new
+[33m4408a3c[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{1}: commit: testing
+[33m5be41af[m HEAD@{2}: commit: added new
+[33m895b6cf[m HEAD@{3}: commit: fix
+[33mab8cb2a[m HEAD@{4}: commit: topological sort
+[33md5303ee[m HEAD@{5}: commit: maxconsecutive3
+[33m9b5e167[m HEAD@{6}: commit: stringcompression
+[33m61dc702[m HEAD@{7}: commit: newupdated
+[33m35ce881[m HEAD@{8}: commit: solves some questions
+[33m0c94b6d[m HEAD@{9}: commit: iscylce using dfs
+[33me5aa8bf[m HEAD@{10}: commit: dfs traversal
+[33me7c91c6[m HEAD@{11}: commit: added bfs
+[33m07556ea[m HEAD@{12}: commit: grapsh
+[33m6d89168[m HEAD@{13}: commit: print subsequence
+[33me9ac1fe[m HEAD@{14}: commit: count inversion
+[33m6276ba5[m HEAD@{15}: commit: searching in bst
+[33ma8ac57f[m HEAD@{16}: commit: binary search trees
+[33m820fc65[m HEAD@{17}: commit: klevel order question
+[33mebe36a7[m HEAD@{18}: commit: klevel order question
+[33m4c7c6a6[m HEAD@{19}: commit: binary trees
+[33mcfbf149[m HEAD@{20}: commit: binary trees
+[33m4c80fc3[m HEAD@{21}: commit: top k frequent elememts
+[33mcca4319[m HEAD@{22}: commit: find lps
+[33m1ba9966[m HEAD@{23}: commit: repeat number problem
+[33m3c42cc1[m HEAD@{24}: commit: first arrays file
+[33m3d1a0f0[m HEAD@{25}: commit: stock span problem
+[33m12aab5d[m HEAD@{26}: Branch: renamed refs/heads/main to refs/heads/main
+[33m12aab5d[m HEAD@{28}: commit: strings
+[33m000af75[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{29}: Branch: renamed refs/heads/master to refs/heads/main
+[33m000af75[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{31}: commit (initial): recursion
