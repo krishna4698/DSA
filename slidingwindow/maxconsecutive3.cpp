@@ -19,7 +19,7 @@ while(right<num.size()){
      
     
 
-}
+} 
 cout<<"length is :"<<length;;
     
 }
